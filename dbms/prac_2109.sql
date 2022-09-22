@@ -1,0 +1,50 @@
+CREATE TABLE STUD_ENT(
+STUD_Id INT,  
+STUD_name VARCHAR(10),
+dept_n VARCHAR(10),
+total_credits int,
+PRIMARY KEY (STUD_Id)
+);
+
+CREATE TABLE TAKES1(
+STUD_Id INT,
+course_id INT,
+sem INT,
+yr INT,
+grade VARCHAR(10),
+sec VARCHAR(10)
+);
+
+CREATE TABLE FACULTY1(
+iD INT,
+name VARCHAR(10),
+dept_n VARCHAR(10),
+salary NUMERIC(6,2),
+PRIMARY KEY (iD)
+);
+
+CREATE TABLE TEACHES1(
+iD INT,
+course_id INT,
+sec_id INT,
+sem INT,
+yr INT
+);
+
+CREATE TABLE SECTION1(
+Sec_id INT,
+COURSE_ID INT,
+building INT,
+room_no INT,
+SEM INT,
+YR INT,
+PRIMARY KEY (Sec_id)
+);
+
+CREATE TABLE COURSE1(
+C_ID INT,
+TITLE VARCHAR(10),
+dept_n VARCHAR(10),
+total_credits int,
+PRIMARY KEY (C_ID)
+);
